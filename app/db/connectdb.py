@@ -8,7 +8,7 @@ def connect():
         "password": settings.DB_PASSWORD,
         "host": settings.DB_HOST,
         "port": settings.DB_PORT,
-        "database": settings.DB_NAME,
+        # "database": settings.DB_NAME,
     }
 
     try:
