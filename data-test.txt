@@ -1,0 +1,16 @@
+// clinic
+INSERT INTO clinic(fullname, clinic_status, address_room)
+VALUES
+('Phòng khám mắt', 1, 'P101'),
+('Phòng khám tai, mũi, họng', 1, 'P102'),
+('Phòng khám cấp cứu', 1, 'P103'),
+('Phòng khám răng, hàm, mặt', 1, 'P104'),
+('Phòng khám mắt-2', 0, 'P105');
+
+// clinic-service
+INSERT INTO staff (fullname, staff_position, clinic_id)
+VALUES
+('Nguyễn Văn A', 'DOCTOR', 1),
+('Trần Thị B', 'NURSE', 1),
+('Phạm Văn C', 'DOCTOR', 2),
+('Lê Thị D', 'NURSE', 3);
