@@ -6,6 +6,10 @@ from app.models.model import PatientInfo, PatientInfoUpdate, OrderInfo
 
 app = APIRouter()
 
+@app.get("/test")
+def test():
+    return JSONResponse(status_code=200, content={"data": "Hello world"})
+
 @app.post("/orders/create/{citizen_id}")
 def make_order(citizen_id: str, orderInfo: OrderInfo, token: str = Depends(oAuthBearer)):
     result, status_code = makeOrder(citizen_id, orderInfo, token)
