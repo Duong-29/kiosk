@@ -14,3 +14,12 @@ VALUES
 ('Trần Thị B', 'NURSE', 1),
 ('Phạm Văn C', 'DOCTOR', 2),
 ('Lê Thị D', 'NURSE', 3);
+
+//health-isurance
+INSERT INTO health_insurance (citizen_id, fullname, gender, dob, phone_number, registration_place, valid_from, expired)
+VALUES
+('012345678901', 'Nguyen Van A', 1, '1990-05-12', '0912345678', 'Bệnh viện Bạch Mai', '2023-01-01', '2026-01-01'),
+('098765432109', 'Tran Thi B', 0, '1985-11-03', '0987123456', 'Bệnh viện Chợ Rẫy', '2022-06-15', '2025-06-15'),
+('123456789012', 'Le Van C', 1, '2000-03-25', '0905123123', 'Bệnh viện Trung Ương Huế', '2024-01-10', '2027-01-10'),
+('234567890123', 'Pham Thi D', 0, '1995-09-17', '0938765432', 'Bệnh viện Hữu Nghị', '2023-08-20', '2026-08-20'),
+('345678901234', 'Hoang Van E', 1, '1978-02-28', '0978888999', 'Bệnh viện 108', '2021-12-05', '2024-12-05');

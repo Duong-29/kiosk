@@ -14,8 +14,8 @@ def connect():
     try:
         conn = mysql.connector.connect(**config)
         cursor = conn.cursor()
-        cursor.execute(f"CREATE DATABASE IF NOT EXISTS {settings.DB_NAME} CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;")
-        conn.database = settings.DB_NAME
+        # cursor.execute(f"CREATE DATABASE IF NOT EXISTS {settings.DB_NAME} CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;")
+        # conn.database = settings.DB_NAME
         print("DATABASE CONNECTED")
         return conn, cursor
     except mysql.connector.Error as err:
