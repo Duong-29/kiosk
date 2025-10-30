@@ -10,11 +10,11 @@ class Settings:
         self.PORT = int(os.getenv("PORT", 8000))
 
         # Database Config
-        self.DB_HOST = os.getenv("DB_HOST", "localhost")
+        self.DB_HOST = os.getenv("DB_HOST", "bcnfvd2qtuyny29keymh-mysql.services.clever-cloud.com")
         self.DB_PORT = os.getenv("DB_PORT", "3306")
-        self.DB_USER = os.getenv("DB_USER", "root")
-        self.DB_PASSWORD = os.getenv("DB_PASSWORD", "")
-        self.DB_NAME = os.getenv("DB_NAME", "kiosk_python")
+        self.DB_USER = os.getenv("DB_USER", "uaylpeonxmjrjfd3")
+        self.DB_PASSWORD = os.getenv("DB_PASSWORD", "1m74GG2Mn65PjwjOmt4T")
+        self.DB_NAME = os.getenv("DB_NAME", "bcnfvd2qtuyny29keymh")
 
         #JWT config
         self.SECRET_KEY = os.getenv("SECRET_KEY")
